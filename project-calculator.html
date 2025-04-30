@@ -7,7 +7,74 @@
 </head>
 <body>
   <header></header>
-  <main></main>
+  <main>
+    <section>
+      <table>
+        <thead>
+          <tr>
+            <th>Parameter</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Busines Site</td>
+            <td>2000</td>
+          </tr>
+          <tr>
+            <td>Onlin Store</td>
+            <td>1000</td>
+          </tr>
+          <tr>
+            <td>Blog</td>
+            <td>1500</td>
+          </tr>
+          <tr>
+            <td>Extra pages (above 1)</td>
+            <td>+200 per page</td>
+          </tr>
+          <tr>
+            <td>Custom Design</td>
+            <td>+1000 to final price</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section>
+      <h3>Order Form</h3>
+      <div>
+        <h5>Choose site type</h5>
+        <input type="radio" value="Business"/>Busines Site <br/>
+        <input type="radio" value="Store"/>Onlin Store <br/>
+        <input type="radio" value="Blog"/>Blog <br/>
+      </div>
+      <div>
+        <h5>Choose number of pages</h5>
+        <select>
+          <option>1 Page (base price)</option>
+          <option>2 Page (+200)</option>
+          <option>3 Page (+400)</option>
+          <option>4 Page (+600)</option>
+          <option>5 Page (+800)</option>
+          <option>6 Page (+1000)</option>
+          <option>7 Page (+1200)</option>
+          <option>8 Page (+1400)</option>
+          <option>9 Page (+1600)</option>
+          <option>10 Page (+1800)</option>
+        </select>
+      </div>
+      <div>
+        <h5>Custom design</h5>
+        <p>+1000</p>
+        <input type="radio" value="Y" checked/>Yes<br/>
+        <input type="radio" value="N"/>No <br/>
+      </div>
+      <div>
+        <input type="reset" value="Reset"/>
+        <input type="calculate" value="Calculate Price"/>
+      </div>
+    </section>
+  </main>
   <footer></footer>
 </body>
 </html>
