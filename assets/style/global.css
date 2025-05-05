@@ -2,6 +2,17 @@ html{
     scroll-behavior: smooth;
 }
 
+:root{
+ --lightBlue: #BFDBF7;
+ --headerFooterWrite: #022B3A;
+ --buttonchange: #1F7A8C;
+ --darkestBlue:#003366;
+ --backgroundWhite: #fff9e4;
+ --balckWriting: black;
+ --backgroundGrey:  #E1E5F2;
+ --buttonwhite:  #b4bec2;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -10,14 +21,14 @@ html{
 
 body{
 font-family: Arial, Helvetica, sans-serif;
-background-color:#fff9e4;
-color: black;
+background-color:var(--backgroundWhite);
+color: var( --balckWriting);
 line-height: 1.6;
-padding: 16px
+padding: 24px 64px;
 }
 
 header, footer{
-    background-color: #93c3d7;
+    background-color: var(--lightBlue);
     padding: 16px;
 }
 
@@ -35,40 +46,42 @@ nav ul li a{
 
 a{
     text-decoration: none;
-    color: #025fbd;
+    color: var(--headerFooterWrite);
 }
 a:hover{
-    color: #003366
+    color: var(--darkestBlue);
 }
 
 main section{
     max-width: 1200px;
-    background-color: #b4bec2;
+    background-color: var(--backgroundGrey);
     padding: 16px;
     margin: 20px;
     border-radius: 12px;
 }
 
 h1 {
+    font-size: 36px;
     margin-bottom: 8px;
 }
 
 h2{
+    font-size: 18px;
     margin-bottom: 16px;
 }
 
 input[type="button"] {
     padding: 8px 16px;
     border:  none;
-    background-color: #f0ecdd;
-    font-size: 16px;
+    background-color: var(--buttonwhite);
+    font-size: 18px;
     cursor: pointer;
     border-radius: 4px;
     transition: 1s;
 }
 
 input[type="button"]:hover {
-    background-color: #0066cc;
+    background-color: var(--darkBlue);
     color: white;
 }
 
@@ -83,13 +96,60 @@ img {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px){
-
+    main section{
+        max-width: 1999px;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px){
-
+    main section{
+        max-width: 991px;
+        padding: 8px;
+        margin: 15px;
+    }
+    h1 {
+        font-size: 28px;    
+        }
+        
+    h2{
+        font-size: 18px;    
+    }
+    input[type="button"] {
+        width: 50%;
+        font-size: 16px;
+    }
+    img{
+        max-width: 100%;
+    }
 }
 
 @media only screen and (max-width: 767px){
+    body{
+        padding: 8px;
+    }
+    header, footer{
+        padding: 8px;
+    }
 
+    main section{
+        max-width: 767px;
+        padding: 8px;
+        margin: 15px;
+    }
+    h1 {
+    font-size: 28px;    
+    }
+    
+    h2{
+        font-size: 18px;    
+    }
+
+    input[type="button"] {
+        width: 50%;
+        font-size: 16px;
+    }
+
+    img{
+        max-width: 100%;
+    }
 }
