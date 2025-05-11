@@ -2,17 +2,6 @@ html{
     scroll-behavior: smooth;
 }
 
-:root{
- --lightBlue: #BFDBF7;
- --headerFooterWrite: #022B3A;
- --buttonchange: #1F7A8C;
- --darkestBlue:#003366;
- --backgroundWhite: #fff9e4;
- --balckWriting: black;
- --backgroundGrey:  #E1E5F2;
- --buttonwhite:  #b4bec2;
-}
-
 *{
     margin: 0;
     padding: 0;
