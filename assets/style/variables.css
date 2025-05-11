@@ -1,11 +1,26 @@
 /* variables.css */
 :root{
+ --fontfam:Arial, Helvetica, sans-serif;
+
+ --backgroundGrey:  #E1E5F2;
+
  --lightBlue: #BFDBF7;
  --headerFooterWrite: #022B3A;
- --buttonchange: #1F7A8C;
  --darkestBlue:#003366;
  --backgroundWhite: #fff9e4;
- --balckWriting: black;
- --backgroundGrey:  #E1E5F2;
+
  --buttonwhite:  #b4bec2;
+ --buttonchange: #003366;
+ --buttonwritechange:#ffffff; 
+
+ --borderImage: #ffffff;
+
+ --balckWriting: #333333;
+ --greyWriting:#666666;
+
+ --transitionspeed: 0.5s;
+
+ --boxshadow: 0 2px 5px #060606;
+ 
+
 }
