@@ -2,12 +2,17 @@
 :root{
  --fontfam:Arial, Helvetica, sans-serif;
 
- --backgroundGrey:  #E1E5F2;
+ --backgroundGrey:  #EEEEEE;
+ --backgrounddarkgrey: #DDDDDD;
+--backgroundlightgrey: #e8e8e8;
 
- --lightBlue: #BFDBF7;
+
+ --headline: #ffb595;
+
+ --lightBlue: #b5d6f8;
  --headerFooterWrite: #022B3A;
- --darkestBlue:#003366;
- --backgroundWhite: #fff9e4;
+ --darkestBlue:#2A4759;
+ --backgroundWhite: #fffdf6e6;
 
  --buttonwhite:  #b4bec2;
  --buttonchange: #003366;
@@ -21,6 +26,8 @@
  --transitionspeed: 0.5s;
 
  --boxshadow: 0 2px 5px #060606;
+ --boxshadowblue: 0 3px 5px #4b759f;
+
  
 
 }

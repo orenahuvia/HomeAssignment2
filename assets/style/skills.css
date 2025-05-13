@@ -1,0 +1,16 @@
+.skillssubsec{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.skillstype{
+    box-shadow: var(--boxshadowblue);
+    border-radius: 12px;
+    padding: 6px;
+    margin: 8px;
+    background-color: var(--backgroundlightgrey);
+}
+#experienceheadline{
+    font-size: 28px;
+    text-align: center;
+}

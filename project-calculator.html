@@ -20,6 +20,11 @@
     </nav>
   </header>
   <main>
+        <section class="headlinesec">
+    <div class="headlinediv">
+      <h1 class="headlineh">Project-Calculator</h1>
+    </div>
+    </section>
     <section>
       <table>
         <thead>
@@ -56,13 +61,13 @@
       <h3>Order Form</h3>
       <div>
         <h5>Choose site type</h5>
-        <input type="radio" value="Business"/>Busines Site <br/>
-        <input type="radio" value="Store"/>Onlin Store <br/>
-        <input type="radio" value="Blog"/>Blog <br/>
+        <input type="radio" value="Business" name="sitetype" checked/>Busines Site <br/>
+        <input type="radio" value="Store" name="sitetype"/>Onlin Store <br/>
+        <input type="radio" value="Blog" name="sitetype"/>Blog <br/>
       </div>
       <div>
         <h5>Choose number of pages</h5>
-        <select>
+        <select id="pageamount">
           <option>1 Page (base price)</option>
           <option>2 Page (+200)</option>
           <option>3 Page (+400)</option>
@@ -78,24 +83,19 @@
       <div>
         <h5>Custom design</h5>
         <p>+1000</p>
-        <input type="radio" value="Y" checked/>Yes<br/>
-        <input type="radio" value="N"/>No <br/>
+        <input type="radio" value="Y" name="custom" id="wantCustom" checked/>Yes<br/>
+        <input type="radio" value="N" name="custom"/>No <br/>
       </div>
       <div>
-        <input type="reset" value="Reset"/>
-        <input type="calculate" value="Calculate Price"/>
+        <input type="reset" value="Reset" id="resetbtn" class="orderbt"/>
+        <input type="button" value="Calculate Price" id="calculatebtn" class="orderbt"/>
       </div>
+      <div><span>Estimated project cost: </span>  <span id="resultdisplay"></span></div>
     </section>
   </main>
   <footer>
-    <ul>
-      <li><a href="index.html">HOME</a></li>
-      <li><a href="about.html">ABOUT</a></li>
-      <li><a href="skills.html">SKILLS</a></li>
-      <li><a href="project-calculator.html">Project Calculator</a></li>
-    </ul>
-  </nav>
   <p>© 2025 Oren Ahuvia. All rights reserved.</p>
   </footer>
+  <script src="/services/calculator.js"></script>
 </body>
 </html>
