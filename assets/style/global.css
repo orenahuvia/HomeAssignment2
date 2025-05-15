@@ -2,6 +2,13 @@ html{
     scroll-behavior: smooth;
 }
 
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -15,10 +22,6 @@ background-color:var(--backgroundWhite);
 color: var(--balckWriting);
 line-height: 1.6;
 padding: 24px 64px;
-}
-
-header{
-    top:0;
 }
 
 footer{
@@ -35,6 +38,7 @@ header, footer{
     display: flex;
     align-items: center;
 }
+
 
 nav{
     width: 100%;
@@ -151,6 +155,8 @@ img {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px){
+
+
     main section{
         max-width: 991px;
         padding: 8px;
@@ -187,6 +193,7 @@ img {
     header, footer{
         padding: 8px;
     }
+  
     main{
     margin-top: 40px;
     margin-bottom: 40px;
@@ -216,4 +223,41 @@ img {
     width: 100%;
     height: 30px;
 }
+
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
 }

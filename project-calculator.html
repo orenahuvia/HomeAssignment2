@@ -25,8 +25,9 @@
       <h1 class="headlineh">Project-Calculator</h1>
     </div>
     </section>
-    <section>
-      <table>
+    <section class="projectsection">
+      <h3 class="subtitle">Price Table</h3>
+      <table id="costtable">
         <thead>
           <tr>
             <th>Parameter</th>
@@ -57,16 +58,17 @@
         </tbody>
       </table>
     </section>
-    <section>
-      <h3>Order Form</h3>
+    <section class="projectsection" id="calculatorsection">
+      <h3 class="subtitle">Order Form</h3>
+      <div id="calculatoroptions">
       <div>
-        <h5>Choose site type</h5>
+        <h4 class="choose">Choose site type</h4>
         <input type="radio" value="Business" name="sitetype" checked/>Busines Site <br/>
         <input type="radio" value="Store" name="sitetype"/>Onlin Store <br/>
         <input type="radio" value="Blog" name="sitetype"/>Blog <br/>
       </div>
       <div>
-        <h5>Choose number of pages</h5>
+        <h4>Choose number of pages</h4>
         <select id="pageamount">
           <option>1 Page (base price)</option>
           <option>2 Page (+200)</option>
@@ -81,21 +83,23 @@
         </select>
       </div>
       <div>
-        <h5>Custom design</h5>
+        <h4>Custom design</h4>
         <p>+1000</p>
         <input type="radio" value="Y" name="custom" id="wantCustom" checked/>Yes<br/>
         <input type="radio" value="N" name="custom"/>No <br/>
       </div>
-      <div>
+      </div>
+
+      <div id="buttons">
         <input type="reset" value="Reset" id="resetbtn" class="orderbt"/>
         <input type="button" value="Calculate Price" id="calculatebtn" class="orderbt"/>
       </div>
-      <div><span>Estimated project cost: </span>  <span id="resultdisplay"></span></div>
+      <div id="showcalc"><span>Estimated project cost: </span>  <span id="resultdisplay"></span></div>
     </section>
   </main>
   <footer>
   <p>© 2025 Oren Ahuvia. All rights reserved.</p>
   </footer>
-  <script src="/services/calculator.js"></script>
+  <script src="/services/calculator.js"defer></script>
 </body>
 </html>

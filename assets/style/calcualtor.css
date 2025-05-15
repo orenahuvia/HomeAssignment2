@@ -1,0 +1,143 @@
+.projectsection{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#costtable{
+    padding: 8px;
+    margin: 8px;
+    width: 80%;
+}
+
+thead{
+    text-align: center;
+}
+
+tr{
+    padding:4px;
+}
+
+th, td{
+    padding: 4px;
+    text-align: center;
+
+}
+
+#calculatorsection{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#calculatoroptions{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 16px;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+#buttons{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.orderbt{
+    display: inline-block;
+    margin: 4px;
+    padding: 8px 16px;
+    border:  none;
+    background-color: var(--buttonwhite);
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: var(--transitionspeed);
+    box-shadow: var(--boxshadow);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 200px;
+    height: 50px;
+}
+
+.orderbt:hover {
+    background-color: var(--buttonchange);
+    color: var(--buttonwritechange);
+}
+
+#showcalc{
+    margin: 4px;
+    padding: 8px;
+}
+
+span{
+    text-align: center;
+}
+
+@media only screen and (max-width: 767px){
+#costtable{
+    padding: 2px;
+    margin: 2px;
+    width: 100%;
+}
+
+thead{
+    text-align: center;
+}
+
+tr{
+    padding:2px;
+}
+
+th, td{
+    padding: 2px;
+    text-align: center;
+
+}
+#calculatorsection{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#calculatoroptions{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 16px;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+#buttons{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.orderbt{
+    display: inline-block;
+    margin: 4px;
+    padding: 8px 16px;
+    border:  none;
+    background-color: var(--buttonwhite);
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: var(--transitionspeed);
+    box-shadow: var(--boxshadow);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 200px;
+    height: 50px;
+}
+
+}
